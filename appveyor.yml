@@ -90,10 +90,12 @@ install:
     - cmd: conda config --add channels https://conda.anaconda.org/oce
     - cmd: conda config --add channels https://conda.anaconda.org/pythonocc
     - cmd: conda config --add channels https://conda.anaconda.org/tpaviot
-    - cmd: conda install pythonocc-core==0.18.2
-    - cmd: conda install pyqt
-    - cmd: conda install wxpython
-    - cmd: conda install numpy
+    - cmd: conda install -c tpaviot pythonocc-core==0.18.2
+    #- cmd: conda install pyqt
+    #- cmd: conda install wxpython
+    #- cmd: conda install numpy
+    - cmd: conda info ipaddress
+    - cmd: conda info pythonocc-core
 
 build: off
 
